@@ -154,8 +154,8 @@ nav ul {
 
 nav li:first-child:after {
   content: " | ";
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: .1rem;
+  margin-right: .1rem;
 }
 
 .top a {
@@ -263,8 +263,8 @@ footer ul.social li img:hover {
 
   footer ul.legal li:after {
     content: " | ";
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
   }
 
   footer ul.legal li:last-child:after {

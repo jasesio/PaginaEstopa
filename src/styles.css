@@ -167,8 +167,8 @@ nav ul {
 }
 
 nav li:first-child::after {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
     content: " | "
 }
 
@@ -277,8 +277,8 @@ footer ul.social li img:hover {
 
     footer ul.legal li::after {
         content: " | ";
-        padding-right: .5rem;
-        padding-left: .5rem;
+        padding-right: .2rem;
+        padding-left: .2rem;
     }
 
     footer ul.legal li:last-child::after {
