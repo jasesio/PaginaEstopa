@@ -14,8 +14,14 @@
 <body>
     <include src="header.html"></include>
     <main>
-        <div class="container-fluid">
-            <h1>Clips de nuestros conciertos y más</h1>
+        <div class="container-fluid" id="ajustarContainer">
+            <div class="contenedor-video">
+                <h1>Clips de nuestros conciertos y más</h1>
+                <picture class="img-video">
+                    <source srcset="img/video.webp" type="image/webp" class="img-video-width">
+                    <img src="img/video.jpg" alt="imagen/icono de una camara" class="img-video-width">
+                  </picture>
+            </div>
             <div class="grid-videos">
                 <article>
                     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/t3HUQiCbdoI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -101,6 +107,16 @@
                 </a>
             </div>
         </div>
+        <br><br><br><br><br>
+        <div class="contenedor-imagen">
+            <a href=""><img src="img/banda_masImagenes.jpg" alt="icono imagenes y mensaje mas imagenes" class="imagen1"></a>
+          </div>
+          <div class="contenedor-imagen">
+            <a href=""><img src="img/banda_masClips.jpg" alt="icono video y mensaje mas clips" class="imagen2"></a>
+          </div>
+          <div class="contenedor-imagen">
+            <a href=""><img src="img/banda_masInfo.jpg" alt="icono informacion y mensaje mas informacion" class="imagen3"></a>
+          </div>
     </main>
     <include src="footer.html"></include>
     <script src="../node_modules/lightgallery/lightgallery.min.js"></script> 

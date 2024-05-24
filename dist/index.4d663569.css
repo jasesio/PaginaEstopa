@@ -288,8 +288,13 @@ main.home {
   padding-right: 1rem;
 }
 
-.container-fluid h1 {
+.container-fluid h1, .contenedor-derechos {
   text-align: center;
+}
+
+.contenedor-equipo h1 {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .container {
@@ -300,6 +305,74 @@ main.home {
 
 .container-dependence h1 {
   margin-top: 30px;
+}
+
+.animated-text {
+  transition: font-size 1s;
+}
+
+.animated-text:hover {
+  font-size: 50px;
+}
+
+.animated-img {
+  transition: transform .5s;
+}
+
+.contenedor-imagen {
+  width: 691px;
+  height: 117px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imagen1, .imagen2, .imagen3 {
+  transition: left 1s;
+  position: absolute;
+  left: -78%;
+}
+
+.contenedor-imagen:hover .imagen1, .contenedor-imagen:hover .imagen2, .contenedor-imagen:hover .imagen3 {
+  left: 0;
+}
+
+.imgSrc1 {
+  width: 30px;
+  height: 30px;
+}
+
+.imgSrc2 {
+  width: 27px;
+  height: 27px;
+}
+
+.meta-data a {
+  color: #6f36a1;
+}
+
+.Capa_1 {
+  stroke-dasharray: 60000;
+  stroke-dashoffset: 60000px;
+  animation: 45s linear forwards dash;
+}
+
+.svgAnimation {
+  align-items: center;
+  width: 25%;
+  display: flex;
+}
+
+.svgAnimation div {
+  width: 48%;
+  display: inline-block;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @media (width >= 992px) {
@@ -389,6 +462,10 @@ section.aims {
 }
 
 @media (width >= 768px) {
+  .animated-img:hover {
+    transform: scale(1.2);
+  }
+
   .rutas {
     width: 70%;
   }
@@ -555,6 +632,143 @@ aside section:first-of-type {
   margin-top: 3rem;
 }
 
+.clip-animation {
+  clip-path: path("M53.275,1.675c-8.1-3.6-18.425,0-22.025,7.65C27.65,1.225,16.875-2.375,9.225,1.675C0.7,5.725-3.35,15.6,3.375,27.725C8.325,36.275,16.875,42.575,31.25,54.25c14.825-11.675,23.375-17.975,27.875-26.525C65.85,16.05,61.8,5.725,53.275,1.675z");
+  width: 270px;
+  height: 220px;
+  margin-top: 50px;
+  animation: 2s infinite clip;
+}
+
+@keyframes clip {
+  0% {
+    clip-path: path("M53.275,1.675c-8.1-3.6-18.425,0-22.025,7.65C27.65,1.225,16.875-2.375,9.225,1.675C0.7,5.725-3.35,15.6,3.375,27.725C8.325,36.275,16.875,42.575,31.25,54.25c14.825-11.675,23.375-17.975,27.875-26.525C65.85,16.05,61.8,5.725,53.275,1.675z");
+  }
+
+  50% {
+    clip-path: path("M213.1,6.7c-32.4-14.4-73.7,0-88.1,30.6C110.6,4.9,67.5-9.5,36.9,6.7C2.8,22.9-13.4,62.4,13.5,110.9 C33.3,145.1,67.5,170.3,125,217c59.3-46.7,93.5-71.9,111.5-106.1C263.4,64.2,247.2,22.9,213.1,6.7z");
+  }
+
+  100% {
+    clip-path: path("M53.275,1.675c-8.1-3.6-18.425,0-22.025,7.65C27.65,1.225,16.875-2.375,9.225,1.675C0.7,5.725-3.35,15.6,3.375,27.725C8.325,36.275,16.875,42.575,31.25,54.25c14.825-11.675,23.375-17.975,27.875-26.525C65.85,16.05,61.8,5.725,53.275,1.675z");
+  }
+}
+
+@keyframes move {
+  to {
+    margin-left: 200px;
+  }
+}
+
+.clip-svg {
+  clip-path: url("#myClip");
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  animation: 2s linear infinite alternate move;
+}
+
+.gradient {
+  background: linear-gradient(pink, #1e1e3c);
+  align-items: center;
+  display: flex;
+}
+
+.contenedor-new {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.responsive-new img {
+  width: 100%;
+  height: auto;
+}
+
+.img-magafono {
+  width: 50px;
+}
+
+.contenedor-megafono, .contenedor-video, .contenedor-derechos {
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.contenedor-equipo {
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.contenedor-megafono h1 {
+  margin-bottom: 0;
+}
+
+.img-megafono, .img-video, .img-derecho {
+  width: 10%;
+  margin-left: 20px;
+}
+
+.img-equipo {
+  width: 10%;
+}
+
+.img-video-width, .img-derecho-width, .img-equipo-width {
+  width: 100%;
+}
+
+.img-megafono1, .img-video1 img, .img-derecho1 img, .img-equipo1 img {
+  width: 100px;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.container-icons {
+  align-items: center;
+  display: flex;
+}
+
+@media (width <= 993px) {
+  .container-icons {
+    justify-content: center;
+  }
+
+  .img-megafono1, .img-video1 img, .img-derecho1 img, .img-equipo1 img {
+    width: 50px;
+  }
+}
+
+@media (width <= 650px) {
+  #ocultarText1, #ocultarText2 {
+    display: none;
+  }
+
+  .contenedor-megafono, .contenedor-video, .contenedor-derechos {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  @media (width <= 650px) {
+    .contenedor-equipo {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .img-megafono, .img-video, .img-derecho {
+    width: 15%;
+    margin: 20px 0 0;
+  }
+}
+
 @media (width >= 768px) {
   .last-posts {
     grid-template-columns: repeat(3, 1fr);
@@ -563,7 +777,100 @@ aside section:first-of-type {
   }
 }
 
+@media (width <= 650px) {
+  .gradient {
+    flex-direction: column;
+  }
+
+  .clip-svg {
+    margin-top: 0;
+    margin-bottom: 25px;
+    animation: none;
+  }
+
+  div.top {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  main.home {
+    margin: 20vh 0 0;
+  }
+
+  .container, #ajustarContainer {
+    margin: 10vh 0 0;
+  }
+}
+
+.contenedorReyes {
+  background: var(--light-color);
+  border: 1px solid var(--neutral-color);
+  margin-bottom: 20px;
+}
+
+.restoNoticias {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.noticia1, .noticia2 {
+  text-align: center;
+  background: var(--light-color);
+  border: 1px solid var(--neutral-color);
+  width: 48%;
+}
+
 @media (width <= 768px) {
+  @keyframes move {
+    to {
+      margin-left: 100px;
+    }
+
+    0% {
+      clip-path: circle(75px);
+    }
+
+    100% {
+      clip-path: circle(75px);
+    }
+  }
+
+  .contenedor-imagen {
+    width: 250px;
+    height: 89px;
+  }
+
+  .imagen1, .imagen2, .imagen3 {
+    left: -55%;
+  }
+
+  .imagen1 {
+    content: url("banda_masImagReducido.ebb77f1d.jpg");
+  }
+
+  .imagen2 {
+    content: url("banda_masClipsReducido.a7a9f508.jpg");
+  }
+
+  .imagen3 {
+    content: url("banda_masInfoReducido.30ac3854.jpg");
+  }
+
+  .animated-img:hover {
+    margin-bottom: 50px;
+    transform: scale(1.2);
+  }
+
+  #container_arte {
+    overflow: hidden;
+  }
+
+  #imagen_arte {
+    width: 733px;
+    height: auto;
+  }
+
   .grid-dependence img {
     width: 100%;
     height: auto;
