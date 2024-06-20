@@ -585,6 +585,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"bNKaB":[function(require,module,exports) {
 var _scriptTs = require("./script.ts");
+document.cookie = "cookieName=value; SameSite=None; Secure";
 var imagenes = document.querySelectorAll(".img-fluid");
 imagenes.forEach(function(imagen) {
     imagen.addEventListener("mouseover", function() {

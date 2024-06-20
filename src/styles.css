@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,600;1,600&display=swap');
 
 :root {
-    --main-color: rgb(0, 59, 74);
     --lema: rgb(249, 5, 5);
     --accent-color: rgb(191, 12, 240);
     --neutral-color: rgb(229, 225, 254);
@@ -12,6 +11,7 @@
     --sans-serif-font: 'Lato', sans-serif;
     --serif-font: 'Noto Serif', serif;
     --open-san: 'Open Sans Regular';
+    --dark-color:rgb(0,0,0,);
 }
 
 *,
@@ -43,6 +43,7 @@ main {
 
 footer {
     flex-shrink: 0;
+    --main-color: rgb(0, 59, 74);
 }
 
 body {
@@ -100,6 +101,10 @@ a {
 
 a:hover {
     color: var(--main-color);
+}
+
+.top{
+    color: var(--dark-color);
 }
 
 @media (min-width: 992px) {
@@ -174,7 +179,7 @@ nav li:first-child::after {
 
 .top a {
     font-weight: 700;
-    color: var(--main-color);
+    color: var(--dark-color);
     border-bottom: none;
 }
 
@@ -429,7 +434,7 @@ text-align: center;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    background-image: url(./img/imagen_fondo.jpg);
+    background-image: url(./img/imagen_fondo.webp);
     background-size: cover;
     background-position: center;
     color: var(--light-color);
@@ -546,10 +551,11 @@ section.aims {
 
 .card-content {
     padding: 15px;
+    color: var(--dark-color);
 }
 
 .card-content h2 a, .card-content h4 a   {
-    color: var(--main-color);
+    color: var(--dark-color);
     border-bottom: none;
 }
 
@@ -763,6 +769,7 @@ aside section:first-of-type {
   .img-megafono {
     width: 10%;
     margin-left: 20px;
+    height: auto;
   }
 
   .img-video, .img-derecho {
@@ -776,6 +783,7 @@ aside section:first-of-type {
 
   .img-video-width, .img-derecho-width, .img-equipo-width{
     width:100%;
+    height: auto;
   }
 
 

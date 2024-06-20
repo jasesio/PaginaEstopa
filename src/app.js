@@ -1,5 +1,7 @@
 import "./script.ts";
 
+document.cookie = "cookieName=value; SameSite=None; Secure";
+
 var imagenes = document.querySelectorAll('.img-fluid');
 
 imagenes.forEach(function(imagen) {

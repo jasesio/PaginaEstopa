@@ -1,6 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,600;1,600&display=swap";
 :root {
-  --main-color: #003b4a;
   --lema: #f90505;
   --accent-color: #bf0cf0;
   --neutral-color: #e5e1fe;
@@ -11,6 +10,7 @@
   --sans-serif-font: "Lato", sans-serif;
   --serif-font: "Noto Serif", serif;
   --open-san: "Open Sans Regular";
+  --dark-color: rgb(0, 0, 0, );
 }
 
 *, :after, :before {
@@ -38,6 +38,7 @@ main {
 }
 
 footer {
+  --main-color: #003b4a;
   flex-shrink: 0;
 }
 
@@ -92,6 +93,10 @@ a {
 
 a:hover {
   color: var(--main-color);
+}
+
+.top {
+  color: var(--dark-color);
 }
 
 @media (width >= 992px) {
@@ -159,7 +164,7 @@ nav li:first-child:after {
 }
 
 .top a {
-  color: var(--main-color);
+  color: var(--dark-color);
   border-bottom: none;
   font-weight: 700;
 }
@@ -392,7 +397,7 @@ main.home {
 
 .hero-image {
   color: var(--light-color);
-  background-image: url("imagen_fondo.d2e88e38.jpg");
+  background-image: url("imagen_fondo.8da91879.webp");
   background-position: center;
   background-size: cover;
   flex-direction: column;
@@ -511,11 +516,12 @@ section.aims {
 }
 
 .card-content {
+  color: var(--dark-color);
   padding: 15px;
 }
 
 .card-content h2 a, .card-content h4 a {
-  color: var(--main-color);
+  color: var(--dark-color);
   border-bottom: none;
 }
 
@@ -709,7 +715,13 @@ aside section:first-of-type {
   margin-bottom: 0;
 }
 
-.img-megafono, .img-video, .img-derecho {
+.img-megafono {
+  width: 10%;
+  height: auto;
+  margin-left: 20px;
+}
+
+.img-video, .img-derecho {
   width: 10%;
   margin-left: 20px;
 }
@@ -720,6 +732,7 @@ aside section:first-of-type {
 
 .img-video-width, .img-derecho-width, .img-equipo-width {
   width: 100%;
+  height: auto;
 }
 
 .img-megafono1, .img-video1 img, .img-derecho1 img, .img-equipo1 img {

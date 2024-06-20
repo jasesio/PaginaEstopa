@@ -5,16 +5,97 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Estopa-noticias</title>
         <meta name="description" content="Estopa es quizá el dúo más popular de la historia de la rumba catalana y el principal artífice de la difusión de un subgénero, la rumba urbana o rumba rock, que ha logrado traspasar fronteras inimaginables.">
+        <style>:root {
+  --lema: #f90505;
+  --accent-color: #bf0cf0;
+  --neutral-color: #e5e1fe;
+  --grey: #9e9dab;
+  --bg-color: #a39797;
+  --light-color: #f35252;
+  --blue-light: #a786f9;
+  --sans-serif-font: "Lato", sans-serif;
+  --serif-font: "Noto Serif", serif;
+  --open-san: "Open Sans Regular";
+  --dark-color: rgb(0, 0, 0, );
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg-color);
+  flex-direction: column;
+  display: flex;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  --main-color: #003b4a;
+  flex-shrink: 0;
+}
+
+body {
+  font-family: var(--sans-serif-font);
+  color: var(--main-color);
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  font-family: var(--serif-font);
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2.3rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1.45rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+</style>
         <link rel="stylesheet" href="/index.4d663569.css">
         <script src="/index.62c4194b.js" async="" defer=""></script>
         <link rel="shortcut icon" href="/icono.efc12ac9.png" type="image/png">
-      </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
 
 <body>
     <header class="header">
     <div class="container-fluid">
         <div class="top">
-            <a href="/index.html"><img src="/logo.726d37a8.png" alt="nombre del grupo" width="90" height="65"></a>
+            <a href="/index.html"><img src="/logo.726d37a8.png" alt="nombre del grupo" width="100" height="79"></a>
             <p><b><i>Bienvenido al Mundo de Estopa: Música y Más</i></b></p>
             <nav>
                 <ul>
@@ -29,19 +110,19 @@
 
         <div class="contenedor-new" id="ajustarContainer">
             <picture class="responsive-new">
-                <source srcset="/news_grande.f181e9cf.jpg" media="(min-width:768px)">
-                <source srcset="/news_pequena.f16b02a8.jpg" media="(max-width:767px)">
+                <source srcset="/news_grande.f181e9cf.jpg" media="(min-width:768px)" width="800">
+                <source srcset="/news_pequena.f16b02a8.jpg" media="(max-width:767px)" width="450">
                 <img src="/news_predeterminada.3daa76a0.jpg" alt="mensaje de NEWS con fichas">
             </picture>
         </div>   
     <div class="container-fluid">
         <div class="contenedor-megafono">
             <h1>Fechas de los conciertos de Estopa 2024</h1>
-            <img src="/megafono.6d5ae8b4.svg" alt="icono de un megafono" class="img-megafono">
+            <img src="/megafono.6d5ae8b4.svg" alt="icono de un megafono" class="img-megafono" width="140">
         </div>
             <div class="contenedorReyes">
                 <div class="card-image" id="container_arte">
-                    <img src="/noticias_reyes_corazon.78140b44.jpg" alt="persona haciendo un corazón en un concierto" width="1000" height="667" class="img-fluid" id="imagen_arte">
+                    <img src="/noticias_reyes_corazon.0ecf070c.webp" alt="persona haciendo un corazón en un concierto" width="1000" height="667" class="img-fluid" id="imagen_arte">
                 </div>
                 <div class="card-content">
                     <p class="datos">20 de octubre de 2023</p>
@@ -53,7 +134,7 @@
             <div class="restoNoticias">
                 <div class="noticia1">   
                     <div class="card-image">
-                        <img src="/noticias_espana.cbe3b293.jpg" alt="mapa del mundo centrado en Espana" loading="lazy" width="1000" height="667" class="img-fluid">
+                        <img src="/noticias_espana.ad45f8fe.webp" alt="mapa del mundo centrado en Espana" loading="lazy" width="1000" height="667" class="img-fluid">
                     </div>
                     <div class="card-content">
                         <p class="datos">15 de noviembre de 2023</p>
@@ -63,7 +144,7 @@
                 </div>
                 <div class="noticia2">
                     <div class="card-image">
-                        <img src="/noticias_argentina.e574e684.jpg" alt="mapa del mundo centrado en Argentina" loading="lazy" width="1000" height="667" class="img-fluid">
+                        <img src="/noticias_argentina.7d670c3e.webp" alt="mapa del mundo centrado en Argentina" loading="lazy" width="1000" height="667" class="img-fluid">
                     </div>
                     <div class="card-content">
                         <p class="datos">10 de diciembre de 2023</p>
@@ -80,19 +161,19 @@
             <a href="/multimedia.html">
                 <picture class="img-video1">
                     <source srcset="/video.056fa914.webp" type="image/webp">
-                    <img src="/video.d1ed0bf1.jpg" alt="imagen/icono de una camara" loading="lazy">
+                    <img src="/video.d1ed0bf1.jpg" alt="imagen/icono de una camara" loading="lazy" width="100">
                 </picture>
             </a>
             <a href="/copyleft.html">
                 <picture class="img-derecho1">
                     <source srcset="/derechos.9d128277.avif" type="image/avif">
-                    <img src="/derechos.1a8757a0.jpg" alt="imagen/icono de una balanza" loading="lazy">
+                    <img src="/derechos.1a8757a0.jpg" alt="imagen/icono de una balanza" loading="lazy" width="120">
                 </picture>
             </a>
             <a href="/quienesSomos.html">
                 <picture class="img-equipo1">
                     <source srcset="/equipo.0d61f9ea.jxr" type="image/jxr">
-                    <img src="/equipo.ce22e064.png" alt="imagen/icono de tres siluetas de personas" loading="lazy">
+                    <img src="/equipo.ce22e064.png" alt="imagen/icono de tres siluetas de personas" loading="lazy" width="120">
                 </picture>
             </a>
         </div>
