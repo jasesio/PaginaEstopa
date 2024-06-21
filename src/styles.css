@@ -150,7 +150,7 @@ header.header {
     z-index: 1;
     width: 100%;
     min-height: 10vh;
-    padding-top: 1rem;
+    padding-top: 0rem;
     padding-bottom: 1rem;
     background-color: var(--light-color);
     box-shadow: 1px 5px 5px 0px rgba(229, 225, 254, 0.25);

@@ -135,7 +135,7 @@ header.header {
   background-color: var(--light-color);
   width: 100%;
   min-height: 10vh;
-  padding-top: 1rem;
+  padding-top: 0;
   padding-bottom: 1rem;
   position: fixed;
   top: 0;
